@@ -19,3 +19,12 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-keep interface jp.speakbuddy.edisonandroidexercise.api.* { *; }
+-keep class jp.speakbuddy.edisonandroidexercise.base.** { *; }
+-keep class jp.speakbuddy.edisonandroidexercise.data.** { *; }
+-keep class jp.speakbuddy.edisonandroidexercise.model.** { *; }
+-keep class jp.speakbuddy.edisonandroidexercise.module.** { *; }
+-keep class jp.speakbuddy.edisonandroidexercise.nav.** { *; }
+-keep class jp.speakbuddy.edisonandroidexercise.network.** { *; }
+-keep class jp.speakbuddy.edisonandroidexercise.ui.** { *; }
+-keep class jp.speakbuddy.edisonandroidexercise.util.** { *; }

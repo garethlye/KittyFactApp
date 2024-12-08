@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="cat_facts"
+        android:enabled="true"
+        android:icon="@drawable/ic_cat"
+        android:shortcutShortLabel="@string/shortcut_1">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="fact://catfactapp.com/fact_screen" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="cat_list"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:shortcutShortLabel="@string/shortcut_2">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="fact://catfactapp.com/fact_list"/>
+    </shortcut>
+    <shortcut
+        android:shortcutId="cat_detector"
+        android:enabled="true"
+        android:icon="@drawable/ic_camera"
+        android:shortcutShortLabel="@string/shortcut_3">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="fact://catfactapp.com/cat_detector"/>
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="android_view" translatable="false">Android View</string>
+    <string name="failed_to_load_tensorflowlite" translatable="false">Failed to load Tensor</string>
+
+    <string name="shortcut_1" translatable="false">New Cat Fact</string>
+    <string name="shortcut_2" translatable="false">Stored Cat Fact</string>
+    <string name="shortcut_3" translatable="false">Cat Detector</string>
+</resources>

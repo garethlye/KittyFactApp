@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">猫の事実</string>
+    <string name="txt_fact">事実</string>
+    <string name="txt_back">戻る</string>
+    <string name="txt_cat_fact">猫の事実\u0020\u0020\u0020|</string>
+    <string name="txt_saved_cat_fact">保存された猫の事実</string>
+    <string name="txt_search_facts">事実を検索</string>
+    <string name="txt_offline_mode">オフラインモード</string>
+    <string name="txt_get_fact">猫の事実を取得</string>
+    <string name="txt_multiple_cats">複数の猫!</string>
+    <string name="txt_delete_facts">すべての猫の事実を削除しますか？</string>
+    <string name="txt_delete_all_fact">すべての事実を削除</string>
+    <string name="txt_no_more_facts">削除する猫の事実がもうありません</string>
+    <string name="txt_no_internet">インターネットが見つかりません！ :(</string>
+    <string name="txt_no_stored_facts">ローカルの事実が見つかりません</string>
+    <string name="txt_length">長さ: %d</string>
+    <string name="txt_share_cat_fact">猫の事実を共有</string>
+    <string name="txt_share_cat_fact_content">ランダムな猫の事実！\n%s</string>
+    <string name="txt_filter_favourites">お気に入りをフィルタリング</string>
+    <string name="txt_error_loading_data">データの読み込みエラー</string>
+    <string name="txt_favourite_single_fact">お気に入りの事実</string>
+    <string name="txt_favourite_cat">お気に入りの猫</string>
+    <string name="txt_catloader">CatLoader</string>
+    <string name="txt_number_of_facts_seen">件の事実を見ました: %s</string>
+    <string name="txt_detect_a_cat">猫を発見</string>
+    <string name="txt_is_it_a_cat">これは猫ですか</string>
+    <string name="txt_no_idea">わからない</string>
+    <!-- Pretty sure the translation below is wrong,
+    not entirely sure how to handle object reference gramatically in string-->
+    <string name="txt_i_am_confident">私はこれが%s%%の確信を持っている%s</string>
+    <string name="txt_permission_required">猫検出器を有効にするにはカメラの許可が必要です。</string>
+    <string name="txt_open_settings">設定を開く</string>
+</resources>
