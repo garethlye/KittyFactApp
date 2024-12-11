@@ -8,6 +8,7 @@
     <dimen name="size_30">30dp</dimen>
     <dimen name="size_48">48dp</dimen>
     <dimen name="size_50">50dp</dimen>
+    <dimen name="size_100">100dp</dimen>
     <dimen name="size_128">128dp</dimen>
     <dimen name="size_200">200dp</dimen>
 

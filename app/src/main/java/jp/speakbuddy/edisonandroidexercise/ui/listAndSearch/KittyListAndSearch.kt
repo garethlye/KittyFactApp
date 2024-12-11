@@ -51,6 +51,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -60,6 +61,11 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.paging.LoadState
 import androidx.paging.PagingData
 import androidx.paging.compose.collectAsLazyPagingItems
+import coil3.compose.AsyncImage
+import coil3.compose.AsyncImagePainter
+import coil3.imageLoader
+import coil3.request.ImageRequest
+import coil3.util.DebugLogger
 import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.LottieConstants
@@ -293,6 +299,13 @@ fun ShowFactMiniPopup(
     onDismiss: () -> Unit,
     catFact: String
 ) {
+    val catImageUrls = stringArrayResource(R.array.cat_images_url)
+    var currentImageUrl by remember { mutableStateOf("") }
+    LaunchedEffect(isCatFactPopupVisible.value) {
+        if (isCatFactPopupVisible.value) {
+            currentImageUrl = catImageUrls.random()
+        }
+    }
     if (isCatFactPopupVisible.value) {
         Popup(onDismissRequest = onDismiss) {
             Box(
@@ -320,10 +333,15 @@ fun ShowFactMiniPopup(
                         .align(Alignment.Center),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    Icon(
-                        painterResource(id = R.drawable.ic_cat_sitting),
-                        contentDescription = stringResource(R.string.txt_favourite_cat),
-                        tint = Color.Black
+                    val imageLoader = LocalContext.current.imageLoader.newBuilder()
+                        .logger(DebugLogger())
+                        .build()
+                    AsyncImage(
+                        imageLoader = imageLoader,
+                        model = currentImageUrl,
+                        contentDescription = stringResource(R.string.txt_random_cat_image),
+                        error = painterResource(id = R.drawable.ic_cat_sitting),
+                        modifier = Modifier.size(dimensionResource(R.dimen.size_100))
                     )
                     Text(
                         modifier = Modifier.padding(top = dimensionResource(R.dimen.padding_small)),

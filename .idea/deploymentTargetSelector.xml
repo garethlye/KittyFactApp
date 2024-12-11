@@ -16,9 +16,6 @@
       <SelectionState runConfigName="testShareIconIsDisplayed()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="testFactLengthIsDisplayedForLongFacts()">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="FactScreenTest">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>

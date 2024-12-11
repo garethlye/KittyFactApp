@@ -30,4 +30,5 @@
     <string name="txt_i_am_confident">私はこれが%s%%の確信を持っている%s</string>
     <string name="txt_permission_required">猫検出器を有効にするにはカメラの許可が必要です。</string>
     <string name="txt_open_settings">設定を開く</string>
+    <string name="txt_random_cat_image">ランダムな猫の画像</string>
 </resources>

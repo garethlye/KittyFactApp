@@ -28,3 +28,5 @@
 -keep class jp.speakbuddy.edisonandroidexercise.network.** { *; }
 -keep class jp.speakbuddy.edisonandroidexercise.ui.** { *; }
 -keep class jp.speakbuddy.edisonandroidexercise.util.** { *; }
+-keep class coil.** { *; }
+-keep class okhttp3.** { *; }

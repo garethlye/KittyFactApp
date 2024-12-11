@@ -62,6 +62,7 @@ fun CatDetectorScreen(
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
     val previewView = remember { PreviewView(context) }
+    val isClickable = viewModel::isClickable
 
     LaunchedEffect(Unit) {
         if (!cameraPermissionState.status.isGranted) {
@@ -80,7 +81,10 @@ fun CatDetectorScreen(
                     .testTag(stringResource(R.string.android_view))
             )
             Button(
-                onClick = { viewModel.captureAndClassify(context) },
+                onClick = {
+                    if (isClickable()) {
+                    viewModel.captureAndClassify(context)
+                } },
                 enabled = true,
                 modifier = Modifier
                     .align(Alignment.BottomCenter)

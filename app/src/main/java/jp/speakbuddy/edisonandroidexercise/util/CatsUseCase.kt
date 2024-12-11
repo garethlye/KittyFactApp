@@ -100,9 +100,10 @@ class CatsUseCase @Inject constructor(
                                 it
                             )
                         })
+                    } else {
+                        //if somehow the local result is empty, the db should be empty
+                        CatFactRepository.CatFactResult.Error(CatFactStatus.NO_CATS.message)
                     }
-                    //if somehow the local result is empty, the db should be empty
-                    CatFactRepository.CatFactResult.Error(CatFactStatus.NO_CATS.message)
                 }
             }
         } catch (e: Exception) {

@@ -152,6 +152,8 @@ dependencies {
     implementation (libs.androidx.camera.view)
     implementation (libs.androidx.camera.mlkit)
     implementation (libs.accompanist.permissions)
+    implementation(libs.coil.compose)
+    implementation(libs.coil.network.okhttp)
 }
 
 kapt {

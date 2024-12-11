@@ -6,4 +6,16 @@
     <string name="shortcut_1" translatable="false">New Cat Fact</string>
     <string name="shortcut_2" translatable="false">Stored Cat Fact</string>
     <string name="shortcut_3" translatable="false">Cat Detector</string>
+    <string-array name="cat_images_url">
+        <item>https://cdn-icons-png.flaticon.com/128/6988/6988878.png</item>
+        <item>https://cdn-icons-png.flaticon.com/128/8277/8277431.png</item>
+        <item>https://cdn-icons-png.flaticon.com/128/763/763755.png</item>
+        <item>https://cdn-icons-png.flaticon.com/128/3468/3468377.png</item>
+        <item>https://cdn-icons-png.flaticon.com/128/17593/17593667.png</item>
+        <item>https://cdn-icons-png.flaticon.com/128/8036/8036693.png</item>
+        <item>https://cdn-icons-png.flaticon.com/128/763/763724.png</item>
+        <item>https://cdn-icons-png.flaticon.com/128/18291/18291644.png</item>
+        <item>https://cdn-icons-png.flaticon.com/128/11051/11051253.png</item>
+        <item>https://cdn-icons-png.flaticon.com/128/763/763773.png</item>
+    </string-array>
 </resources>
