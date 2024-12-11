@@ -5,6 +5,7 @@ import androidx.paging.map
 import jp.speakbuddy.edisonandroidexercise.data.CatFactLocalRepo
 import jp.speakbuddy.edisonandroidexercise.data.CatFactLocalRepo.LocalCatFactResult
 import jp.speakbuddy.edisonandroidexercise.data.entity.CatFactLocal
+import jp.speakbuddy.edisonandroidexercise.util.AppHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -27,6 +28,7 @@ import org.mockito.kotlin.whenever
 class KittyListAndSearchViewModelTest {
     private lateinit var viewModel: KittyListAndSearchViewModel
     private lateinit var mockRepository: CatFactLocalRepo
+    private lateinit var mockAppHelper: AppHelper
     private val testDispatcher = UnconfinedTestDispatcher()
 
     /**
@@ -39,9 +41,10 @@ class KittyListAndSearchViewModelTest {
     fun setup() {
         Dispatchers.setMain(testDispatcher)
         mockRepository = mock()
+        mockAppHelper = mock()
 
         viewModel = KittyListAndSearchViewModel(
-            appHelper = mock(),
+            appHelper = mockAppHelper,
             repository = mockRepository,
             ioDispatcher = testDispatcher
         )
@@ -124,6 +127,7 @@ class KittyListAndSearchViewModelTest {
      * unnecessary code and uses more ram by creating unnecessary variables with each query.
      * I admit defeat for now.
      */
+
     @Test
     fun `test toggleFavoriteStatus calls repository updateCatFact and updates catFact state`() =
         runTest {
