@@ -29,6 +29,12 @@ class KittyListAndSearchViewModelTest {
     private lateinit var mockRepository: CatFactLocalRepo
     private val testDispatcher = UnconfinedTestDispatcher()
 
+    /**
+     * Due to the usage of PagingData, each unit tests need to be run individually for it to pass.
+     * Not ideal, especially with my use of CI/CD action that runs units tests so in a production
+     * variant of this this needs to be modified in some way that makes sense. Maaaybe I shouldn't
+     * of use mCatFactsFromLocalDb as a flow of paging data.
+     */
     @BeforeEach
     fun setup() {
         Dispatchers.setMain(testDispatcher)
