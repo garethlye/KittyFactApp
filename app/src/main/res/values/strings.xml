@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">Edison Android Exercise</string>
+    <string name="app_name">Kitty Facts</string>
+    <string name="txt_fact">Fact</string>
+    <string name="txt_back">Back</string>
+    <string name="txt_cat_fact">Cat Fact\u0020\u0020\u0020|</string>
+    <string name="txt_saved_cat_fact">Saved Cat Facts</string>
+    <string name="txt_search_facts">Search Facts</string>
+    <string name="txt_offline_mode">Offline Mode</string>
+    <string name="txt_get_fact">Get a cat fact</string>
+    <string name="txt_multiple_cats">Multiple cats!</string>
+    <string name="txt_delete_facts">Are you sure you want to delete all cat facts?</string>
+    <string name="txt_delete_all_fact">Delete all facts</string>
+    <string name="txt_no_more_facts">No more cat facts to delete</string>
+    <string name="txt_no_internet">No internet found! :(</string>
+    <string name="txt_no_stored_facts">No local facts found</string>
+    <string name="txt_length">Length: %d</string>
+    <string name="txt_share_cat_fact">Share Cat Fact</string>
+    <string name="txt_share_cat_fact_content">Random Cat Fact!\n%s</string>
+    <string name="txt_filter_favourites">Filter Favourites</string>
+    <string name="txt_error_loading_data">Error loading data</string>
+    <string name="txt_favourite_single_fact">Favorite Single Fact</string>
+    <string name="txt_favourite_cat">Favorite cat</string>
+    <string name="txt_number_of_facts_seen">You\'ve seen %s facts</string>
+    <string name="txt_catloader">CatLoader</string>
+    <string name="txt_detect_a_cat">Detect a cat</string>
+    <string name="txt_is_it_a_cat">Is this a cat</string>
+    <string name="txt_no_idea">I have no idea</string>
+    <string name="txt_i_am_confident">I am %s%% confident that this is a %s</string>
+    <string name="txt_permission_required">Camera permission is required to enable cat detector.</string>
+    <string name="txt_open_settings">Open Settings</string>
+    <string name="txt_random_cat_image">Random Cat Image</string>
 </resources>

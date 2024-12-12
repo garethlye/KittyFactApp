@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text size -->
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+
+    <!-- Specific size -->
+    <dimen name="size_30">30dp</dimen>
+    <dimen name="size_48">48dp</dimen>
+    <dimen name="size_50">50dp</dimen>
+    <dimen name="size_100">100dp</dimen>
+    <dimen name="size_128">128dp</dimen>
+    <dimen name="size_200">200dp</dimen>
+
+    <!-- Padding size -->
+    <dimen name="padding_tiny">4dp</dimen>
+    <dimen name="padding_very_small">8dp</dimen>
+    <dimen name="padding_small">12dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_xtra_large">24dp</dimen>
+</resources>
