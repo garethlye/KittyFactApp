@@ -21,7 +21,7 @@ fun MainActivityNavHost(context: Context, navController: NavHostController) {
     NavHost(navController, startDestination = NavRouteNames.FACT_SCREEN) {
         composable(NavRouteNames.FACT_SCREEN,
             deepLinks = listOf(
-                navDeepLink { uriPattern = "fact://catfactapp.com/fact_screen" }
+                navDeepLink { uriPattern = DeeplinkNavRoutes.FACT_SCREEN }
             )) {
             FactScreen(
                 onNavigateAction = { route ->
@@ -31,7 +31,7 @@ fun MainActivityNavHost(context: Context, navController: NavHostController) {
         }
         composable(NavRouteNames.KITTY_LIST_AND_SEARCH,
             deepLinks = listOf(
-                navDeepLink { uriPattern = "fact://catfactapp.com/fact_list" }
+                navDeepLink { uriPattern = DeeplinkNavRoutes.KITTY_LIST_AND_SEARCH }
             )) {
             KittyListAndSearch(
                 onNavigateAction = { route ->
@@ -41,7 +41,7 @@ fun MainActivityNavHost(context: Context, navController: NavHostController) {
         }
         composable(NavRouteNames.CAT_DETECTOR_SCREEN,
             deepLinks = listOf(
-                navDeepLink { uriPattern = "fact://catfactapp.com/cat_detector" }
+                navDeepLink { uriPattern = DeeplinkNavRoutes.CAT_DETECTOR_SCREEN }
             )) {
             CatDetectorScreen(
                 onNavigateAction = { route ->

@@ -21,4 +21,6 @@ object CommonConstants {
     const val CAT_MODEL_TENSOR_LABELS = "labels.txt"
 
     const val CAT_MODEL_SHARE_IMG = "cat_fact_share.png"
+
+    const val BASE_DEEPLINK = ""
 }
