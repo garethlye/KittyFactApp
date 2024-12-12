@@ -36,6 +36,10 @@ class KittyListAndSearchViewModelTest {
      * Not ideal, especially with my use of CI/CD action that runs units tests so in a production
      * variant of this this needs to be modified in some way that makes sense. Maaaybe I shouldn't
      * of use mCatFactsFromLocalDb as a flow of paging data.
+     *
+     * Since this is a problematic unit test class, I have filtered it out in build.gradle, so to
+     * run this you will need to remove the filter line from build.gradle.
+     * In essence, 6 unit tests will pass but the last two will most likely fail.
      */
     @BeforeEach
     fun setup() {

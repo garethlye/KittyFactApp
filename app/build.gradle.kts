@@ -64,6 +64,12 @@ android {
     }
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
 // Setup protobuf configuration, generating lite Java and Kotlin classes
 protobuf {
     protoc {
@@ -112,7 +118,6 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
     //actually room-ktx is not required because they merged it to room-runtime above. Somehow build warning shows, so adding this to ignore error.
-    annotationProcessor(libs.room.compiler)
     ksp(libs.room.compiler)
     implementation (libs.androidx.paging.runtime.ktx) // Use latest version
     implementation (libs.androidx.paging.compose)
