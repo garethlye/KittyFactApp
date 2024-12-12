@@ -1,7 +1,7 @@
 name: Build and Release APK
 
 # Basic CI/CD action to checkout branch that starts with "base-", run the unit tests, generate an
-# APK, push the apk file to the 'releases' github tab
+# APK, and optionally push the apk file to the 'releases' github tab
 on:
   push:
     branches: [base-*]
@@ -65,23 +65,23 @@ jobs:
         run: ./gradlew assembleRelease
 
       # Step 7: Upload APK as a Release File to Releases Tab
-      - name: Upload APK to Release
-        id: upload-release
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: app/build/outputs/apk/release/app-release.apk
-          asset_name: app-release.apk
-          asset_content_type: application/vnd.android.package-archive
+      # - name: Upload APK to Release
+      #  id: upload-release
+      #  uses: actions/upload-release-asset@v1
+      #  with:
+      #    upload_url: ${{ steps.create_release.outputs.upload_url }}
+      #    asset_path: app/build/outputs/apk/release/app-release.apk
+      #    asset_name: app-release.apk
+      #    asset_content_type: application/vnd.android.package-archive
 
       # Step 8: Create a GitHub Release
-      - name: Create GitHub Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: "release-${{ github.run_number }}"
-          release_name: "Release ${{ github.run_number }}"
-          draft: false
-          prerelease: false
+      #- name: Create GitHub Release
+      #  id: create_release
+      #  uses: actions/create-release@v1
+      #  env:
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #  with:
+      #    tag_name: "release-${{ github.run_number }}"
+      #    release_name: "Release ${{ github.run_number }}"
+      #    draft: false
+      #    prerelease: false
